@@ -17,7 +17,7 @@ namespace Kalender
         static string[] lines;
         static public void day_2_einlesen()
         {
-            string file = "./../../../../day2.txt";
+            string file = "../../../Kalender/files/day2.txt";
             string text = File.ReadAllText(file);
             lines = text.Split(
             new string[] { Environment.NewLine },

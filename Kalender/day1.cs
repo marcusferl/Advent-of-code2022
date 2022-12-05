@@ -13,7 +13,7 @@ namespace Kalender
     {
         static public void read()
         {
-            string file = "./../../../../day1.txt";
+            string file = "../../../Kalender/files/day1.txt";
             string text = File.ReadAllText(file);
             string[] lines = text.Split(
             new string[] { Environment.NewLine },

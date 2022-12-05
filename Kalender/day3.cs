@@ -12,7 +12,7 @@ namespace Kalender
 {
     internal class day3
     {
-        static string file = "../../../../day3.txt";
+        static string file = "../../../Kalender/files/day3.txt";
         static string letters = "0abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         static string[] lines = File.ReadAllLines(file);
         static List<string> bag1 = new List<string>();

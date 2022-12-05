@@ -16,7 +16,7 @@ namespace Kalender
         // Create Base lists in "lists"
         public static void createBaseList()
         {
-            string file = "../../../../day5_base.txt";
+            string file = "../../../Kalender/files/day5_base.txt";
             string[] lines = File.ReadAllLines(file);
 
             // 9 Columns in file day5_base
@@ -85,7 +85,7 @@ namespace Kalender
         static public void getMoveLine()
         {
             createBaseList();
-            string file = "../../../../day5.txt";
+            string file = "../../../Kalender/files/day5.txt";
             string[] lines = File.ReadAllLines(file);
             
             
