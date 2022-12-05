@@ -10,7 +10,7 @@ namespace Kalender
     {
         static void Main(string[] args)
         { 
-            day5.getMoveLine();
+            day5.day5_part2();
             Console.ReadKey();
         }
     }

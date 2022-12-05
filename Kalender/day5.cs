@@ -82,7 +82,7 @@ namespace Kalender
         }
 
 
-        static public void getMoveLine()
+        static public void day5_part1()
         {
             createBaseList();
             string file = "../../../Kalender/files/day5.txt";
@@ -133,6 +133,44 @@ namespace Kalender
             }
             return list;
         }
-    }
+        public static void day5_part2()
+        {
+            createBaseList();
+            string file = "../../../Kalender/files/day5.txt";
+            string[] lines = File.ReadAllLines(file);
 
+
+            foreach (string line in lines)
+            {
+
+
+                // Mover
+                List<int> splitTheLineList = new List<int>();
+                splitTheLineList = splitTheLine(line);
+
+                int moveFrom = splitTheLineList[1] - 1;
+                int moveAll = splitTheLineList[0];
+                int moveTo = splitTheLineList[2] - 1;
+
+
+                for (int i = moveAll -1; 0 <= i; i--)
+                {
+                    char x = lists[moveFrom].ElementAt(i);
+                    lists[moveFrom].RemoveAt(i);
+                    lists[moveTo].Reverse();
+                    lists[moveTo].Add(x);
+                    lists[moveTo].Reverse();
+                }
+            }
+            foreach (List<char> _charList in lists)
+            {
+
+                Console.WriteLine(_charList[0]);
+            }
+        }
+
+    }
 }
+   
+
+
