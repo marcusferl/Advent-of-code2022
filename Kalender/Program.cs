@@ -9,8 +9,9 @@ namespace Kalender
     internal class Program
     {
         static void Main(string[] args)
-        { 
-            day5.day5_part2();
+        {
+            // day6.day6_part1();
+            day6.day6_part2();
             Console.ReadKey();
         }
     }
