@@ -10,8 +10,8 @@ namespace Kalender
     {
         static void Main(string[] args)
         {
-            // day6.day6_part1();
-            day6.day6_part2();
+            
+            day7.day7_part1();
             Console.ReadKey();
         }
     }

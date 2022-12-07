@@ -9,7 +9,7 @@ namespace Kalender
 {
     internal class day4
     {
-        static string file = "../../../../day4.txt";
+        static string file = "../../../Kalender/files/day4.txt";
         static string[] lines = File.ReadAllLines(file);
 
         static string firstsplit = "";
