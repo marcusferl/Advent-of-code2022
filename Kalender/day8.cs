@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -19,24 +19,9 @@ namespace Kalender
         static string[] lines = File.ReadAllLines(file);
 
 
-        static int row = lines.Count();
-        static int column = lines[0].Count();
+
         static public void day8_part1()
         {
-            char[,] field = new char[row, column];
-
-
-            // Build up 2D array
-            //for (int i = 0; i < lines.Length; i++)
-            //{
-            //    for (int j = 0; j < lines[i].Length; j++)
-            //    {
-            //        field[i, j] = lines[i][j];
-            //    }
-            //}
-
-
-          
             int counter = 0;
             for (int i = 0; i < lines.Length; i++)
             {
@@ -65,7 +50,6 @@ namespace Kalender
             }
             return columnString.ToString();
         }
-
 
         static public bool visibleCheck(string seq, int current_index)
         {
@@ -113,26 +97,11 @@ namespace Kalender
         static string file = "../../../Kalender/files/day8.txt";
         static string[] lines = File.ReadAllLines(file);
 
-
-        static int row = lines.Count();
-        static int column = lines[0].Count();
         static public void day8_part2()
         {
-            char[,] field = new char[row, column];
+            int bestTreeCounter = 0;
+            int counter = 0;
 
-
-            // Build up 2D array
-            for (int i = 0; i < lines.Length; i++)
-            {
-                for (int j = 0; j < lines[i].Length; j++)
-                {
-                    field[i, j] = lines[i][j];
-                }
-            }
-
-
-              int bestTreeCounter = 0;
-              int counter = 0;
             for (int i = 0; i < lines.Length; i++)
             {
                 for (int j = 0; j < lines[i].Length; j++)
@@ -161,7 +130,6 @@ namespace Kalender
             }
             return columnString.ToString();
         }
-
 
         static public int placeLeftSite(string seq, int current_index)
         {
@@ -260,6 +228,3 @@ namespace Kalender
 
     }
 }
-
-
-
