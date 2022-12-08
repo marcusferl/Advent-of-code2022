@@ -10,8 +10,8 @@ namespace Kalender
     {
         static void Main(string[] args)
         {
-            
-            day7.day7_part1();
+            //day8_02.placeRightSite("61121151",6);
+            day8_02.day8_part2();
             Console.ReadKey();
         }
     }
